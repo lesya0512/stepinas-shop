@@ -1,0 +1,85 @@
+.list {
+    position: relative;
+    &_overlay{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: flex;
+        width: calc(100% - 20px);
+        justify-content: space-between;
+    }
+
+    &_item {
+        width: 308px;
+        padding: 16px;
+        position: relative;
+        transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &_action {
+            // opacity: 0;
+            // visibility: hidden;
+            // position: absolute;
+            top: -16px;
+            right: 16px;
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            height: 80px;
+            justify-content: space-between;
+        }
+
+        &:hover &_action {
+            opacity: 1;
+            visibility: visible;
+            transition: background-color .2s ease-in-out, opacity .2s ease-in-out, visibility .2s ease-in-out;
+        }
+        
+
+        &__inner {
+            align-self: flex-start;
+        }
+
+        &__title {
+            margin: 0;
+            margin-bottom: 4px;
+
+            a {
+                color: #242425;
+            }
+        }
+
+        &__price {
+            color: #242425;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &__cart {
+            color: #242425;
+            font-size: 16px;
+            font-weight: 500;
+            border: 1px#242425 solid;
+            padding: 10px 15px;
+            margin-top: 15px;
+            width: 300px;
+        }
+
+        &__label {
+            color: #242425;
+            // text-decoration: underline;
+        }
+    }
+}
+
+.tovar {
+    &__stock {
+        color: #242425;
+    }
+
+    &__code {
+        color: #242425;
+    }
+}

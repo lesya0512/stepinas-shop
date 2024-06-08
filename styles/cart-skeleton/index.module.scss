@@ -1,0 +1,37 @@
+.skeleton {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skeleton__item {
+  background-color: #a3a3a3;
+  overflow: hidden !important;
+  padding: 0;
+  height: 185px;
+  margin-bottom: 25px;
+
+  @media (max-width: 530px) {
+    height: 145px;
+    margin-bottom: 12px;
+  }
+}
+
+.skeleton__item__light {
+  height: 100%;
+  animation-duration: 1.6s;
+  background: linear-gradient(270deg, #ffffff0c 34.78%, rgba(255, 255, 255, 0.06) 60.33%, #ffffff0c 84.84%);
+  background-size: 200% 100%;
+  animation: skeleton 2s infinite ease-in-out;
+}
+
+
+@keyframes skeleton {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

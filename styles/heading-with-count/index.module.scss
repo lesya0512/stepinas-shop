@@ -1,0 +1,14 @@
+.title {
+  position: relative;
+  display: inline-block;
+  color: #242425;
+
+  &__count {
+    position: absolute;
+    top: 11px;
+    right: -100px;
+    color: #3b3b3d;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,17 @@
+.tooltip {
+    position: absolute;
+    top: -5px;
+    width: max-content;
+    padding: 10px 10px;
+    border-radius: 12px;
+    background-color: #242425;
+
+    &__inner {
+        position: relative; 
+    }
+
+    &__text {
+        color: rgba( 255, 255, 255, 0.90 );
+        font-size: 14px;
+    }
+}

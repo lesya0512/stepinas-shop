@@ -1,0 +1,121 @@
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #242425;
+    padding: 34px 0;
+    margin: 100px 0 0 0;
+    flex: 0 0 auto;
+
+    color: #fff;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #afafaf;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-text-copy {
+    color: #fff;
+    margin: 52px 0;
+}
+
+.footer-nav {
+    width: 216px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav-item-btn {
+    width: 43px;
+    height: 43px;
+    display: block;
+    position: relative;
+}
+
+.footer-nav-item-btn::before {
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.footer-nav-item-btn--shoppingbag {
+    width: 43px;
+    height: 50px;
+    
+}
+
+.footer-nav-item-btn--telegram::before {
+    background-image: url(../../public/img/telegram.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.footer-nav-item-btn--whatsapp::before {
+    background-image: url(../../public/img/whatsapp.svg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.footer-nav-item-btn--vk::before {
+    background-image: url(../../public/img/vk.svg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.footer-center {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-center .footer-center-ul .title,
+.footer-right .footer-right-ul .title {
+    font-weight: bold;
+}
+
+ul.footer-center-ul,
+ul.footer-right-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-right {
+    text-align: right;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-text-copy {
+    font-size: 16px!important;
+}
+
+
+
+

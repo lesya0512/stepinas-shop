@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Baufra', sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100%;
+  flex: 1 0 auto;
+}
+
+.quick-view-modal-overlay,
+.auth-overlay,
+.size-table-overlay  {
+  background: #16181b;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: -1;
+}
+
+.quick-view-modal-overlay.overlay-active,
+.auth-overlay.overlay-active {
+  opacity: 0.6;
+  visibility: visible;
+  z-index: 5;
+}
+
+.size-table-overlay.overlay-active {
+  opacity: 0.6;
+  visibility: visible;
+  z-index: 10;
+}
+
+.not-empty {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: #ff0000;
+  border-radius: 50%;
+}
+
+.quick-modal-dots li.slick-active button {
+  background-image: url(/img/white-ellipse.svg) !important;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100%;
+    flex: 1 0 auto;
+  }
+}
+
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100%;
+    flex: 1 0 auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100%;
+    flex: 1 0 auto;
+  }
+}
+
+.btn-reset {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.counter button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.counter span {
+  color: #242425;
+}
+
+.counter button {
+  position: relative;
+  height: 22px;
+  width: 24px;
+}
+
+.counter button::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.counter button:first-child:before {
+  -webkit-mask: url(/img/minus.png) no-repeat 50% 50%;
+  mask: url(/img/minus.png) no-repeat 50% 50%;
+}
+
+.counter button:last-child:before {
+  -webkit-mask: url(/img/plus.png) no-repeat 50% 50%;
+  mask: url(/img/plus.png) no-repeat 50% 50%;
+}
+
+.counter button:hover::before {
+  transition: background-color 0.2s ease-in-out;
+  background-color: #242425;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Baufra';
+  src: url(../../public/fonts/Baufra-Light.ttf) format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Baufra';
+  font-weight: 400;
+  font-style: normal;
+  src: url(../../public/fonts/Baufra-Medium.ttf) format("ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Baufra';
+  src: url(../../public/fonts/Baufra-Regular.ttf) format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Baufra';
+  src: url(../../public/fonts/Baufra-SemiBold.ttf) format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Baufra';
+  src: url(../../public/fonts/Baufra-Bold.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Baufra';
+  src: url(../../public/fonts/Baufra-DemiBold.ttf) format("ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+.overflow-hidden {
+  overflow-y: hidden;
+}
+
+
+
+
+

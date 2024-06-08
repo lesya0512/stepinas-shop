@@ -1,0 +1,42 @@
+.mobile-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 24px;
+    background-color: #242425;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.mobile-navbar__btn {
+    min-width: max-content;
+    height: 52px;
+    position: relative;
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    background-repeat: no-repeat;
+    background-position: top 5px center;
+}
+
+.mobile-navbar__btn:first-child {
+    background-image: url(/img/home-page.png);
+}
+
+.mobile-navbar__btn:nth-child(2) {
+    background-image: url(/img/catalog.png);
+}
+
+.mobile-navbar__btn:nth-child(3) {
+    background-image: url(/img/favorite.png);
+}
+
+.mobile-navbar__btn:last-child {
+    background-image: url(/img/shopping-cart.png);
+}
+

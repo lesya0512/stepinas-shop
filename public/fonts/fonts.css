@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Baufra';
+    src: url('Baufra-Regular.ttf');
+}
+
+body {
+    font-family: 'Baufra', sans-serif;
+}

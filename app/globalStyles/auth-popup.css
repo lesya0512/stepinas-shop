@@ -1,0 +1,102 @@
+/* CSS для страницы */
+body {
+    position: relative;
+}
+
+.card-front {
+    width: 782px;
+    height: 500px;
+    transition: .3s;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(0);
+    background-color: #fff;
+    padding: 31px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 11; /* Убедитесь, что z-index выше, чем у фона */
+    backface-visibility: hidden;
+}
+
+.card-back {
+    width: 782px;
+    height: 430px;
+    transition: .3s;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(180deg);
+    background-color: #fff;
+    padding: 31px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 11; /* Убедитесь, что z-index выше, чем у фона */
+
+    backface-visibility: hidden;
+}
+
+.auth-popup-second-text {
+    margin-top: 20px;
+    font-size: 18px!important;
+}
+
+.auth-popup__card.switched .card-front {
+
+    transform: translate(-50%, -50%) rotateY(180deg);
+}
+.auth-popup__card.switched .card-back {
+
+    transform: translate(-50%, -50%) rotateY(0deg);
+}
+
+
+.auth-popup-close {
+    height: 15px;
+    width: 15px;
+    z-index: 1;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.auth-popup-close::before {
+    background-color: #242425;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: background-color 0.2s ease-in-out;
+    -webkit-mask: url(/img/close.png) no-repeat 50% 50%;
+    mask: url(/img/close.png) no-repeat 50% 50%;
+}
+  
+  
+.auth-popup-title {
+    padding: 0!important;
+    text-align: left;
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+button.inner_switch {
+    margin-top: 10px;
+    font-size: 18px!important;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.inner_btn {
+    width: 160px;
+    height: 51px;
+    border: 1px solid #242425!important;
+}
+
+.cart-body_socials {
+    margin: 15px 0;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,56 @@
+.action {
+    position: relative;
+  
+    &__btn {
+      z-index: 2;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #242425;
+  
+      // &:not(:last-child) {
+      //   // margin-bottom: 16px;
+      // }
+  
+      &::before {
+        background-color: #E8E9EA;
+        content: '';
+        height: 100%;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: background-color 0.2s ease-in-out;
+      }
+  
+      &_favorite::before {
+        -webkit-mask: url(../../public/img/star.png) no-repeat 50% 50%;
+        mask: url(../../public/img/star.png) no-repeat 50% 50%;
+      }
+  
+      &_quickview::before {
+        -webkit-mask: url(../../public/img/eye.png) no-repeat 50% 50%;
+        mask: url(../../public/img/eye.png) no-repeat 50% 50%;
+      }
+  
+      &:hover::before {
+        transition: background-color 0.2s ease-in-out;
+        background-color: #a7e5d4;
+      }
+  
+      // &.action__btn_favorite:hover::before {
+      //   transition: background-color 0.2s ease-in-out;
+      //   background-color: #FF4747;
+      // }
+  
+      // &.action__btn_quickview:hover::before {
+      //   transition: background-color 0.2s ease-in-out;
+      //   background-color: #FF4747;
+      // }
+    }
+  
+    &__btn_spinner::before {
+      content: none;
+    }
+  }
