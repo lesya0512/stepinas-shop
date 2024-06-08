@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import "./GlobalStyles/normalize.css"
-import "./GlobalStyles/globals.css";
+import './globalStyles/normalize.css'
+import './globalStyles/globals.css';
 import './globalStyles/slick.css'
 import './globalStyles/auth-popup.css'
 import './globalStyles/cookie-popup.css'
