@@ -3,7 +3,7 @@ import styles from '@/styles/main/index.module.scss'
 const CompanyValues = () => {
     return (
         <div className="container">
-            <h2>Ценности бренда</h2>
+            <div className={styles.about_title}><h2>Ценности бренда</h2></div>
                 <div className={styles.third_block}>
                     <div className={styles.third_block_item}>
                         <p>

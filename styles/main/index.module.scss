@@ -2,6 +2,13 @@
 
 .main {
 
+    &_section {
+        &__title {
+            font-size: 64px;
+            margin: 53px 0;
+        }
+    }
+
     &_image {
         margin: 0;
         background-image: url(../../public/img/background.JPG);
@@ -136,6 +143,16 @@
         border: 3px solid #d9d9d9;
         font-size: 24px;
 
+        &__third {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 625px;
+            height: 286px;
+            border: 3px solid #d9d9d9;
+            font-size: 24px;
+        }
+
         p {
             padding: 0 28px;
             text-align: justify
@@ -144,7 +161,6 @@
 }
 
 @media (max-width: 1400px) {
-
     .about {
         &_company_up,
         &_company_down {
@@ -243,7 +259,23 @@
 
 @media (max-width: 800px) {
 
+    .main {
+        &_section {
+            &__title {
+                font-size: 64px;
+                margin: 53px 20px;
+            }
+        }
+    }
+
     .about {
+        &_title {
+            h2 {
+                font-size: 64px;
+                margin: 53px 20px;
+            }
+        }
+
         &_company_up,
         &_company_down {
             display: flex;
@@ -252,8 +284,8 @@
 
             &__text {
                 p {
-                    width: 700px;
-                    margin: 20px 0;
+                    width: 650px;
+                    margin: 20px 10px;
                 }
             }
 
@@ -269,8 +301,72 @@
         &_item {
             justify-content: space-around;
             width: 700px;
-            margin: 0 auto;
+            margin: 0 20px;
             height: 300px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    
+    .about {
+
+        &_company_up,
+        &_company_down {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__text {
+                p {
+                    width: 500px;
+                    margin: 20px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .about {
+        &_company_up,
+        &_company_down {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__text {
+                p {
+                    width: 400px;
+                    margin: 20px 10px;
+                }
+            }
+        }
+    }
+
+    .third_block {
+        &_item:nth-child(3) {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    
+    .about {
+        &_company_up,
+        &_company_down {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__text {
+                p {
+                    width: 312px;
+                    margin: 20px 10px;
+                }
+            }
         }
     }
 }

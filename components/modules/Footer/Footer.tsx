@@ -2,6 +2,7 @@ import Logo from "@/components/elements/Logo/Logo";
 import Link from "next/link";
 import React from 'react';
 import '../../../app/globalStyles/footer.css'
+import LogoMobile from "@/components/elements/Logo/LogoMobile";
 
 const Footer = () => {
 
@@ -12,7 +13,12 @@ const Footer = () => {
         <footer className="footer">
             <div className="container footer-container">
                 <div className="footer-left">
-                    <Logo />
+                    <div className="footer-logo">
+                        <Logo />
+                    </div>
+                    <div className="logomob">
+                        <LogoMobile />
+                    </div>
                     <p className="footer-text-copy">
                         ИП Степинас Кристина Сергеевна <br />
                         ОГРНИП 323784700402131 <br />
@@ -40,6 +46,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
+                <div className="footer-mobile">
                 <div className="footer-center">
                     <ul className="footer-center-ul list-reset">
                         <li className='title'>Навигация</li>
@@ -91,6 +98,7 @@ const Footer = () => {
                         <li>89213639466</li>
                         <li>store@stepinas.ru</li>
                     </ul>
+                </div>
                 </div>
             </div>
         </footer>

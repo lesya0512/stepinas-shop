@@ -1,6 +1,14 @@
 .main-goods {
+    margin: 0 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+}
+
+@media (max-width: 660px) {
+    .main-goods {
+        margin: 0 auto;
+        flex-direction: column;
+    }
 }

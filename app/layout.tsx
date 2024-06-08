@@ -3,6 +3,7 @@ import './globalStyles/normalize.css'
 import './globalStyles/globals.css';
 import './globalStyles/slick.css'
 import './globalStyles/auth-popup.css'
+import './globalStyles/mobilenavbar.css'
 import './globalStyles/cookie-popup.css'
 import './globalStyles/breadcrumbs.css'
 import PagesLayout from "@/components/layouts/PagesLayout";
