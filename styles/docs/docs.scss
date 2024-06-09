@@ -1,10 +1,8 @@
 .container {
 
-  .delivery-text {
-
-      h2 {
-          font-size: 40px!important;
-      }
+  .docs-title {
+      font-size: 64px!important;
+      margin: 60px 0!important;
   }
 
   .privacy-text,
@@ -14,11 +12,60 @@
 
     p {
         font-size: 30px;
+        margin: 15px 0;
     }
   
     h2 {
-        margin: 57px 0;
-        font-size: 64px;
+        margin: 20px 0;
+        font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    .docs-title {
+        margin: 60px 30px!important;
+    }
+  
+    .privacy-text,
+    .delivery-text,
+    .offer-text {
+      margin-bottom: 50px;
+  
+      p {
+          font-size: 30px;
+          margin: 15px 20px;
+      }
+    
+      h2 {
+          margin: 20px 20px;
+          font-size: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    .docs-title {
+        margin: 60px 30px!important;
+    }
+  
+    .privacy-text,
+    .delivery-text,
+    .offer-text {
+      margin-bottom: 50px;
+  
+      p {
+          font-size: 30px;
+          margin: 15px 30px;
+      }
+    
+      h2 {
+          margin: 20px 30px;
+          font-size: 40px;
+      }
     }
   }
 }

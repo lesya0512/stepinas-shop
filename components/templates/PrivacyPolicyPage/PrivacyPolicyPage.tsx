@@ -3,7 +3,7 @@ import '../../../styles/docs/docs.scss'
 
 const PrivacyPolicyPage = () => (
     <div className="container">
-      <h2>Политика конфиденциальности</h2>
+      <h2 className='docs-title'>Политика конфиденциальности</h2>
 
       <div className='privacy-text'>
         <p><b>1. Общие положения</b></p>

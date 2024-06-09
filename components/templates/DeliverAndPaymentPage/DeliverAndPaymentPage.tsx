@@ -3,7 +3,7 @@ import '../../../styles/docs/docs.scss'
 
 const DeliverAndPaymentPage = () => (
     <div className="container">
-        <h2>Доставка и оплата</h2>
+        <h2 className='docs-title'>Доставка и оплата</h2>
 
         <div className="delivery-text">
             <h2>Доставка</h2>

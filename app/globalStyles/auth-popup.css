@@ -36,6 +36,38 @@ body {
     backface-visibility: hidden;
 }
 
+@media (max-width: 800px) {
+    .card-front {
+        width: 500px;
+    }
+
+    .card-back {
+        width: 500px!important;
+    }
+}
+
+@media (max-width: 550px) {
+    .card-front {
+        width: 400px;
+    }
+
+    .card-back {
+        width: 400px!important;
+    }
+}
+
+@media (max-width: 420px) {
+    .card-front{
+        width: 320px;
+        padding-top: 10px;
+    }
+
+    .card-back {
+        width: 320px!important;
+        padding-top: 10px;
+    }
+}
+
 .auth-popup-second-text {
     margin-top: 20px;
     font-size: 18px!important;

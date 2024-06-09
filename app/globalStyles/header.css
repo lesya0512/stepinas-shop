@@ -61,7 +61,9 @@
     z-index: 0;
 }
 
-.header-btn {
+.header-btn-link {
+    display: block;
+    padding: 11px 20px;
     width: 160px;
     height: 51px;
     color: #fff;
@@ -92,6 +94,12 @@
     .header-nav .header-nav-item:last-child,
     .header-btn {
         display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-container .header-nav-item {
+        margin: 0 20px;
     }
 }
 

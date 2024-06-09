@@ -7,11 +7,43 @@
 }
 
 .form_block {
-
     .form_block_input {
         width: 720px;
         height: 56px;
         margin: 7px 0;
         padding: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .form_block {
+        .form_block_input {
+            width: 440px!important;
+            height: 56px;
+            margin: 7px 0;
+            padding: 20px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .form_block {
+        .form_block_input {
+            width: 320px!important;
+            height: 56px;
+            margin: 7px 0;
+            padding: 20px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .form_block {
+        .form_block_input {
+            width: 260px!important;
+            height: 56px;
+            margin: 7px 0;
+            padding: 20px;
+        }
     }
 }

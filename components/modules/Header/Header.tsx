@@ -96,7 +96,7 @@ const Header = () => {
                     <LogoMobile />
                 </div>
                 <div className="header-btn">
-                    <Link href='/catalog' className="btn-reset header-btn">
+                    <Link href='/catalog' className="btn-reset header-btn-link">
                         В каталог
                     </Link>
                 </div>
