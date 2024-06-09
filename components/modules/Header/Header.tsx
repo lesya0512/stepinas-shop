@@ -96,9 +96,9 @@ const Header = () => {
                     <LogoMobile />
                 </div>
                 <div className="header-btn">
-                    <button className="btn-reset header-btn">
+                    <Link href='/catalog' className="btn-reset header-btn">
                         В каталог
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>

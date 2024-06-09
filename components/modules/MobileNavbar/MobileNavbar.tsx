@@ -6,9 +6,9 @@ const MobileNavbar = () => {
             <Link href='/' className='btn-reset mobile-navbar__btn'>
                 главная
             </Link>
-            <button className='btn-reset mobile-navbar__btn'>
+            <Link href='/catalog' className='btn-reset mobile-navbar__btn'>
                 каталог
-            </button>
+            </Link>
             <Link href='/favorites' className='btn-reset mobile-navbar__btn'>
                 избранное
             </Link>
