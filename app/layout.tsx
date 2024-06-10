@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import './globalStyles/normalize.css'
 import './globalStyles/globals.css';
 import './globalStyles/slick.css'
+import '@/public/fonts/fonts.css'
 import './globalStyles/auth-popup.css'
 import './globalStyles/mobilenavbar.css'
 import './globalStyles/cookie-popup.css'
