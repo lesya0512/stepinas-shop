@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: 'Baufra', sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   color: #000;
 }
 
@@ -92,6 +92,16 @@ body {
 @media (max-width: 1000px) {
   .container {
     max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100%;
+    flex: 1 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 700px;
     margin: 0 auto;
     width: 100%;
     min-height: 100%;

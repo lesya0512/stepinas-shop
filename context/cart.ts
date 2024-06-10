@@ -60,7 +60,7 @@ export const $cart = cart
     .on(addTovarToCartFx.done, (cart, { result }) => [
         ...new Map(
             [...cart, result.newCartItem].map((item) => [item.clientId, item])
-        ).values(),
+          ).values(),
     ])
     .on(updateCartItemCountFx.done, (cart, { result }) => 
         cart.map((item) => 

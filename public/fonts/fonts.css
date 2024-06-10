@@ -1,8 +1,34 @@
-@font-face {
+/* @font-face {
     font-family: 'Baufra';
     src: url('Baufra-Regular.ttf');
-}
+} */
+
+/* @font-face {
+    font-family: 'Baufra';
+    src: url('Baufra-Bold.ttf');
+} */
+
+/* @font-face {
+    font-family: 'Baufra';
+    src: url('Baufra-DemiBold.ttf');
+} */
+
+/* @font-face {
+    font-family: 'Baufra';
+    src: url('Baufra-Light.ttf');
+} */
+
+/* @font-face {
+    font-family: 'Baufra';
+    src: url('Baufra-Medium.ttf');
+} */
+
+/* @font-face {
+    font-family: 'Baufra';
+    src: url('Baufra-SemiBold.ttf');
+} */
 
 body {
     font-family: 'Baufra', sans-serif;
+    font-weight: 400;
 }
