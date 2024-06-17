@@ -16,8 +16,9 @@ const MainPage = () => {
             <MainBlock />
             <About />
             {/* <Categories /> */}
-            <CompanyValues />
             <Goods />
+            <CompanyValues />
+            
         </div>
     );
 };

@@ -1,4 +1,5 @@
 import { ICartItem } from "./cart"
+import { ITovar } from "./common"
 
 export interface ILoadOneTovarFx {
     tovarId: string
@@ -36,4 +37,17 @@ export interface ITovarCountBySizeProps {
     tovars: ICartItem[]
     size: string
     withCartIcon?: boolean
+}
+
+export interface ILoadTovarsByFilterFx {
+    limit: number
+    offset: number
+    type: string
+    additionalParam?: string
+    isCatalog?: boolean
+}
+
+export interface ITovars {
+    count: number
+    items: ITovar[]
 }

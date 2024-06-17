@@ -8,7 +8,8 @@ export const usePageTitle = (page: string, additionalText = '') => {
   const translations: Translations = {
     home: 'Главная',
     about: 'О нас',
-    contact: 'Контакты'
+    contact: 'Контакты',
+    catalog: 'Каталог'
     // Добавьте другие страницы и их переводы по мере необходимости
   }
 

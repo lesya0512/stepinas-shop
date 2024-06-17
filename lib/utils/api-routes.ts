@@ -21,27 +21,25 @@ return { db }
 
 // НОВИНКИ
 
-export const getNewGoods = async (db: Db, fieldName: string) => {
-    const cloth = await db.collection('cloth').find().toArray()
-  
-    const filteredCloth = cloth.filter(item => {
-      // Проверка наличия значения в указанном поле fieldName
-      if (!item[fieldName]) return false;
-      // Проверка наличия хотя бы одного размера товара
-      if (Object.values(item.sizes).some(value => value)) return true;
-      // Проверка отсутствия размеров товара (для аксессуаров)
-      return !Object.values(item.sizes).length;
-    });
-  
-    // Выбор первых двух элементов из отфильтрованного массива
-    const slicedCloth = filteredCloth.slice(0, 4);
-  
-    // Перемешивание выбранных товаров
-    shuffle(slicedCloth);
-  
-    return slicedCloth;
-  }
+export const getNewGoods = async (db: Db, isNew: string) => {
+  // Фильтрация товаров с isNew равным true на уровне базы данных
+  const cloth = await db.collection('cloth').find({ isNew: true }).toArray();
 
+  const filteredCloth = cloth.filter(item => {
+    // Проверка наличия хотя бы одного размера товара
+    if (Object.values(item.sizes).some(value => value)) return true;
+    // Проверка отсутствия размеров товара (для аксессуаров)
+    return !Object.values(item.sizes).length;
+  });
+
+  // Выбор первых двух элементов из отфильтрованного массива
+  const slicedCloth = filteredCloth.slice(0, 4);
+
+  // Перемешивание выбранных товаров
+  shuffle(slicedCloth);
+
+  return slicedCloth;
+};
 
 // РЕГИСТРАЦИЯ И АВТОРИЗАЦИЯ 
 // генерация токенов 

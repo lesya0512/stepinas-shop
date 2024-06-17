@@ -1,0 +1,1 @@
+export const tovarTypes = ['w-shirt']
