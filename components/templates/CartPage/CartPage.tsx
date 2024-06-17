@@ -8,7 +8,7 @@ import EmptyPageContent from '@/components/modules/EmptyPageContent/EmptyPageCon
 import OrderInfoBlock from '@/components/modules/OrderInfoBlock/OrderInfoBlock';
 import { basePropsForMotion } from '@/constants/motion';
 import { $shouldShowEmpty } from '@/context/cart';
-import { useBreadcrumbs } from '@/hooks/useBreadcrumbs';
+// import { useBreadcrumbs } from '@/hooks/useBreadcrumbs';
 import { useCartByAuth } from '@/hooks/useCartByAuth';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
 import { countWholeCartItemsAmount } from '@/lib/utils/cart';
@@ -21,19 +21,19 @@ import { Suspense, useState } from 'react';
 const CartPage = () => {
     const cartSpinner = useUnit(getCartItemsFx.pending)
     const currentCartByAuth = useCartByAuth()
-    const { getDefaultTextGenerator, getTextGenerator } = useBreadcrumbs('cart')
+    // const { getDefaultTextGenerator, getTextGenerator } = useBreadcrumbs('cart')
     const isMedia930 = useMediaQuery(930)
     const [isCorrectPromotionalCode, setIsCorrectPromotionalCode] = useState(false)
     const shouldShowEmpty = useUnit($shouldShowEmpty)
 
     return (
         <main>
-            <Suspense fallback={<div>Loading...</div>}>
+            {/* <Suspense fallback={<div>Loading...</div>}>
                 <Breadcrumbs 
                     getDefaultTextGenerator={getDefaultTextGenerator}
                     getTextGenerator={getTextGenerator}
                 />
-            </Suspense>
+            </Suspense> */}
 
             {!shouldShowEmpty ? (
                 <section className={styles.cart}>

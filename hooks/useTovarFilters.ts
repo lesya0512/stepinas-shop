@@ -53,7 +53,9 @@ export const useTovarFilters = (
     updateSearchParam('offset', selected, pathname);
     setCurrentPage(selected);
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 
   const handleApplayFiltersWithPrice = (priceFrom: string, priceTo: string) => {
