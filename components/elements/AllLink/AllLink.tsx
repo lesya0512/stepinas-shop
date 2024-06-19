@@ -7,7 +7,7 @@ const AllLink = () => {
   return (
     <Link href='/catalog' className={styles.all}>
       <span />
-        AllLink
+        в каталог
     </Link>
   )
 }

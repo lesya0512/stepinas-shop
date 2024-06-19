@@ -7,6 +7,7 @@ import './globalStyles/auth-popup.css'
 import './globalStyles/mobilenavbar.css'
 import './globalStyles/cookie-popup.css'
 import './globalStyles/breadcrumbs.css'
+import './globalStyles/map.css'
 import PagesLayout from "@/components/layouts/PagesLayout";
 
 export const metadata: Metadata = {

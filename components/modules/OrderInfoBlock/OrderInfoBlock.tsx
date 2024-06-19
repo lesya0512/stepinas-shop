@@ -1,18 +1,26 @@
+'use client'
+import { $choosenDeliveryAddressData, $choosenPickupAddressData } from '@/context/order/state';
 import { useCartByAuth } from '@/hooks/useCartByAuth';
 import { useTotalPrice } from '@/hooks/useTotalPrice';
 import { countWholeCartItemsAmount } from '@/lib/utils/cart';
 import { formatPrice, showCountMessage } from '@/lib/utils/common';
 import styles from '@/styles/order-block/index.module.scss'
-import { IOrderInfoBlock } from '@/types/modules';
+import { IOrderInfoBlockProps } from '@/types/modules';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useUnit } from 'effector-react';
 import Link from 'next/link';
 import { MutableRefObject, useRef, useState } from 'react';
+import toast from 'react-hot-toast';
 
 const OrderInfoBlock = ({
   isCorrectPromotionalCode,
   isOrderPage
-}: IOrderInfoBlock) => {
+}: IOrderInfoBlockProps) => {
   const currentCartByAuth = useCartByAuth()
   const [isUserAgree, setIsUserAgree] = useState(false)
+  const choosenPickupAddressData = useUnit($choosenPickupAddressData)
+  const choosenDeliveryAddressData = useUnit($choosenDeliveryAddressData)
   const { animatedPrice } = useTotalPrice()
   const checkboxRef = useRef() as MutableRefObject<HTMLInputElement>
   const priceWithDiscount = isCorrectPromotionalCode
@@ -28,6 +36,18 @@ const OrderInfoBlock = ({
         checkboxRef.current.checked = !checkboxRef.current.checked
       }
     }
+
+    // const handleMakePayment = async () => {
+    //   if (
+    //     !choosenDeliveryAddressData.address_line1 &&
+    //     !choosenPickupAddressData.address_line1
+    //   ) {
+    //     const orderBlock = document.querySelector('.order-block') as HTMLLIElement
+    //     scrollToBlock(orderBlock)
+    //     toast.error('Нужно выбрать адрес!')
+    //     return
+    //   }
+    // }
   
     return (
     <div className={styles.order_block}>
@@ -55,7 +75,19 @@ const OrderInfoBlock = ({
             {priceWithDiscount} рублей
           </span>
         </p>
-        {isOrderPage ? <button></button> : (
+
+        {isOrderPage ? ( 
+          <button 
+            className={`btn-reset ${styles.order_block__btn}`}
+            disabled={!isUserAgree || !currentCartByAuth.length || false}
+          >
+            {false ? (
+              <FontAwesomeIcon icon={faSpinner} spin color='#fff' />
+            ) : (
+              'Оформить заказ'
+            )}
+          </button>
+        ) : (
           <Link
             href='/order'
             className={`${styles.order_block__btn} ${

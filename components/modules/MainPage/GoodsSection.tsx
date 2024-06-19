@@ -14,8 +14,9 @@ const GoodsSection = ({ goods, spinner }: IMainPageSectionProps) => {
             <div className={`container ${styles.main_section__container}`}>
 
             <h2 className={`site-title ${styles.main_section__title}`}>Новинки</h2>
+
             <div className={styles.main_section__inner}>
-                <AllLink />
+                
                 {spinner && (
                     <motion.ul
                         className={skeletonStyles.skeleton}
@@ -40,7 +41,7 @@ const GoodsSection = ({ goods, spinner }: IMainPageSectionProps) => {
                     </motion.ul>
                 )}
             </div>
-
+            <AllLink />
             </div>
         </section>
     );

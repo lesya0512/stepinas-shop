@@ -1,3 +1,4 @@
+'use client'
 import { $totalPrice, setTotalPrice } from "@/context/cart"
 import { useUnit } from "effector-react"
 import { useCartByAuth } from "./useCartByAuth"

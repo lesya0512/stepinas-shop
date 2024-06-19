@@ -244,3 +244,12 @@ export const getCheckedArrayParam = (param: string) => {
         return false
     }
 }
+
+//////добавление скриптов на первый рендер///////
+
+export const addScriptToHead = (src: string) => {
+    const script = document.createElement('script')
+    document.head.appendChild(script)
+  
+    script.src = src
+  }

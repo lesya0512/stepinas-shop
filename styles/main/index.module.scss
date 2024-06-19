@@ -1,3 +1,12 @@
+.all {
+    color: #242425;
+    font-size: 24px;
+    border: 1px solid #242425;
+    padding: 2px 7px;
+    text-align: right;
+    margin-left: 610px;
+}
+
 .main {
 
     &_section {
@@ -12,7 +21,7 @@
         background-image: url(../../public/img/background.JPG);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 730px;
+        height: 800px;
         width: 100%;
         
         &_title {
@@ -20,8 +29,8 @@
             text-align: center;
             font-size: 48px;
             font-weight: bold;
-            padding-top: 500px;
-            color: #fff;
+            padding-top: 100px;
+            color: #242425;
         }
     }
 }

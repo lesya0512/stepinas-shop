@@ -27,11 +27,11 @@ const Footer = () => {
                     <ul className="footer-nav list-reset">
                         <li className="footer-nav-item">
                             <Link 
-                                href='/telegram' 
+                                href='https://t.me/stepinas' 
                                 className="footer-nav-item-btn footer-nav-item-btn--telegram" 
                             />
                         </li>
-                        <li className="footer-nav-item">
+                        {/* <li className="footer-nav-item">
                             <Link 
                                 href='/vk' 
                                 className="footer-nav-item-btn footer-nav-item-btn--vk" 
@@ -42,7 +42,7 @@ const Footer = () => {
                                 href='/whatsapp' 
                                 className="footer-nav-item-btn footer-nav-item-btn--whatsapp" 
                             />
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
 

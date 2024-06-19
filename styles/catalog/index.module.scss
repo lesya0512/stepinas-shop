@@ -389,9 +389,9 @@
           position: relative;
           padding: 6px 12px;
           border-radius: 2px;
-          background-color: rgba(255, 255, 255, 0.10);
+          border: 1px solid #242425;
+          background-color: #fff;
           padding-right: 25px;
-          border: 1px solid transparent;
           transition: border-color .2s ease-in-out;
           margin-bottom: 40px;
 
@@ -409,14 +409,14 @@
           }
 
           &__text {
-            color: rgba(255, 255, 255, 0.90);
+            color: #242425;
             font-size: 14px;
             display: inline-block;
             margin-right: 8px;
           }
 
           &__close {
-            background-color: white;
+            background-color: black;
             opacity: 0.4;
             content: '';
             height: 10px;
@@ -424,8 +424,8 @@
             right: 12px;
             position: absolute;
             top: 10px;
-            -webkit-mask: url(/img/close-small.svg) no-repeat 50% 50%;
-            mask: url(/img/close-small.svg) no-repeat 50% 50%;
+            -webkit-mask: url(/img/close-black.png) no-repeat 50% 50%;
+            mask: url(/img/close-black.png) no-repeat 50% 50%;
             transition: opacity .2s ease-in-out;
 
             &:hover {
@@ -464,7 +464,7 @@
     // }
 
     &__empty {
-      color: #F1F3F5;
+      color: #242425;
       text-align: center;
       font-size: 42px;
       font-weight: 700;

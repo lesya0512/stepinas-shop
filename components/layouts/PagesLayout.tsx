@@ -12,6 +12,8 @@ import { useEffect, useState } from "react";
 import CookieAlert from "../modules/CookieAlert/CookieAlert";
 import { motion } from "framer-motion";
 
+import '@/context/order/init'
+
 const PagesLayout = ({ children } : {children: React.ReactNode}) => {
     const openAuthPopup = useUnit($openAuthPopup)
     const [cookieAlertOpen, setCookieAlertOpen] = useState(false)
