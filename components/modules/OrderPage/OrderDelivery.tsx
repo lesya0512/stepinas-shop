@@ -2,7 +2,6 @@
 import { $choosenPickupAddressData, $deliveryTab, $pickupTab } from "@/context/order/state";
 import { useUnit } from "effector-react";
 import OrderTitle from "./OrderTitle";
-import styles from '@/styles/order/index.module.scss';
 import { motion } from "framer-motion";
 import { basePropsForMotion } from "@/constants/motion";
 import { $userGeolocation, getGeolocationFx, setUserGeolocation } from "@/context/user";
@@ -16,6 +15,8 @@ import { useTTMap } from '@/hooks/useTTMap';
 import { SearchMarkersManager, handleResultClearing, handleResultSelection, handleResultsFound, handleSelectPickupAddress, initSearchMarker } from "@/lib/utils/map";
 import { IAddressBBox } from "@/types/order";
 import dynamic from 'next/dynamic';
+import styles from '@/styles/order/index.module.scss';
+
 
 const OrderDelivery = () => {
   const deliveryTab = useUnit($deliveryTab);
