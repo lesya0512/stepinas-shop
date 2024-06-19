@@ -325,6 +325,11 @@
 @media (max-width: 800px) {
 
     .main {
+        &_image {
+            &_title {
+                padding: 50px 0;
+            }
+        }
         &_section {
             &__title {
                 font-size: 56px;
@@ -375,6 +380,11 @@
 @media (max-width: 700px) {
 
     .main {
+        &_image {
+            &_title {
+                font-size: 38px;
+            }
+        }
         &_section {
             &__title {
                 font-size: 48px;
@@ -412,6 +422,15 @@
 }
 
 @media (max-width: 550px) {
+
+    .main {
+        &_image {
+            &_title {
+                font-size: 30px;
+                padding: 20px 0;
+            }
+        }
+    }
     
     .about {
         &_company_up,
@@ -438,6 +457,14 @@
 }
 
 @media (max-width: 410px) {
+
+    .main {
+        &_image {
+            &_title {
+                font-size: 26px;
+            }
+        }
+    }
     
     .about {
         &_company_up,
